@@ -59,21 +59,19 @@ Cloud SQL Proxy is an executable that establishes a secure connection to your Cl
 2. **Run the Proxy**:  
    Open a terminal (or Visual Studio PowerShell) and execute the following:
 
+       ./cloud-sql-proxy --address 0.0.0.0 --port 3306 <INSTANCE_CONNECTION_NAME>
 
-                ./cloud-sql-proxy --address 0.0.0.0 --port 3306 <INSTANCE_CONNECTION_NAME>
+   Alternatively, for IAM authentication:
 
-       Alternatively, for IAM authentication:
+       ./cloud-sql-proxy --auto-iam-authn <INSTANCE_CONNECTION_NAME>
 
-                ./cloud-sql-proxy --auto-iam-authn <INSTANCE_CONNECTION_NAME>
-
-       **Note**: Port 3306 is used for connecting to MySQL.
+   **Note**: Port 3306 is used for connecting to MySQL.
 
 ## Installation
 
 Before running the code, install the required Python dependencies using the following pip command:
 
-
-                pip install pandas google-cloud-bigquery google-cloud-exceptions pydantic sqlalchemy jpype1 jaydebeapi
+    pip install pandas google-cloud-bigquery google-cloud-exceptions pydantic sqlalchemy jpype1 jaydebeapi
 
 ## Running the Project
 
