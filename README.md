@@ -34,56 +34,57 @@ Prerequisites & Setup:
 
 1.  Java Development Kit (JDK)
 
-Requirement: JDK-23
-Action: Download the installer and place it in the project directory.
+     Requirement: JDK-23
+     Action: Download the installer and place it in the project directory.
 
-Download Links:
+     Download Links:
 
-Windows (x64 Installer): https://download.oracle.com/java/23/latest/jdk-23_windows-x64_bin.exe
+      Windows (x64 Installer): https://download.oracle.com/java/23/latest/jdk-23_windows-x64_bin.exe
 
-macOS (x64 DMG Installer):https://download.oracle.com/java/23/latest/jdk-23_macos-x64_bin.dmg
+      macOS (x64 DMG Installer):https://download.oracle.com/java/23/latest/jdk-23_macos-x64_bin.dmg
 
-Linux (x64 RPM Package): https://download.oracle.com/java/23/latest/jdk-23_linux-x64_bin.rpm
+      Linux (x64 RPM Package): https://download.oracle.com/java/23/latest/jdk-23_linux-x64_bin.rpm
 
 2.  MySQL Connector/J
 
-Requirement: MySQL-connector for JDBC connectivity
+     Requirement: MySQL-connector for JDBC connectivity
    
-Action: Download the connector from MySQL Connector/J
+     Action: Download the connector from MySQL Connector/J
    
-Choose the platform independent version (download zip or tar for macOS), extract it, and paste the MySQL-connector folder into the project directory.
+     Choose the platform independent version (download zip or tar for macOS), extract it, and paste the MySQL-connector folder into the project directory.
 
-Download Link:
+     Download Link:
 
-https://dev.mysql.com/downloads/connector/j?utm_source=chatgpt.com
+       https://dev.mysql.com/downloads/connector/j?utm_source=chatgpt.com
 
 3.  Cloud SQL Proxy
 
-What It Is:
+     What It Is:
 
-Cloud SQL Proxy is a separate executable that establishes a secure connection to your Cloud SQL instance, thus allowing one to connect in any IP address. Besides, it          encrypts traffic using TLS and supports authentication via Google Cloud IAM.
+     Cloud SQL Proxy is a separate executable that establishes a secure connection to your Cloud SQL instance, thus allowing one to connect in any IP address. Besides, it          encrypts traffic using TLS and supports authentication via Google Cloud IAM.
 
-Setup Instructions:
+     Setup Instructions:
 
-1. Download the Executable:
+     1. Download the Executable:
 
-For Windows, download the cloud-sql-proxy.exe and place it into your project directory (e.g., C:\Users\tanzh\Documents\Gamuda Capstone\SuperstoreETL). Note: Be sure to        check for the latest version of the executable
+        For Windows, download the cloud-sql-proxy.exe and place it into your project directory (e.g., C:\Users\tanzh\Documents\Gamuda Capstone\SuperstoreETL). Note: Be sure 
+        to check for the latest version of the executable
 
-Download Link:
+     Download Link:
 
-https://github.com/GoogleCloudPlatform/cloud-sql-proxy/releases
+       https://github.com/GoogleCloudPlatform/cloud-sql-proxy/releases
 
-2. Run the Proxy:
+     2. Run the Proxy:
 
-Open a terminal (or Visual Studio PowerShell) and execute:
+       Open a terminal (or Visual Studio PowerShell) and execute:
 
                 ./cloud-sql-proxy --address 0.0.0.0 --port 3306 <INSTANCE_CONNECTION_NAME>
 
-Alternatively, for IAM authentication:
+       Alternatively, for IAM authentication:
 
                 ./cloud-sql-proxy --auto-iam-authn <INSTANCE_CONNECTION_NAME>
 
-Note: Port 3306 is used for connecting to MySQL.
+       Note: Port 3306 is used for connecting to MySQL.
 
 Installation:
 
