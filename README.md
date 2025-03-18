@@ -1,7 +1,7 @@
-# Data Pipeline for Cloud Integration & Data Warehousing
+# Superstore Data Pipeline for Cloud Integration & Data Warehousing
 
 Created by : Samuel Tanzy
-Linkdln :
+Linkdln : www.linkedin.com/in/samuel-tan-zhao-yang-5391001ba
 
 Description:
 
